@@ -596,6 +596,9 @@ color: #404bbf;
   fill: #4d5ae5;
   
 }
+.review-form-comment-wrapper {
+  margin-bottom: 16px;
+}
 .review-form-message {
   font-size: 12px;
   line-height: 1.17;
