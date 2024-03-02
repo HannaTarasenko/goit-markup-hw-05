@@ -402,6 +402,7 @@ color: #404bbf;
   gap: 16px;
   justify-content: center;
   align-items: center;
+  margin-right: 80px;
 }
 .social-media-list-item {
   width: 40px;
@@ -424,23 +425,60 @@ color: #404bbf;
 .social-media-icon {
   fill: #f4f4fd;
 }
-.footer-form {
+.subscription-form {
   display: flex;
   gap: 24px;
 }
-.footer-form-label {
-  display: flex;
+.footer-subscription-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #fff;
+  color: #ffffff;
+  margin-bottom: 16px;
 }
 .footer-form-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  background-color: transparent;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #2e2f42;
+  padding: 8px 16px;
+}
+.footer-form-input::placeholder {
+  color: #ffffff;
 }
 .footer-form-button {
+  display: flex;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
+  min-width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form-button:hover,
+.footer-form-button:focus {
+  background-color: #404bbf;
 }
 .button-icon {
+  margin-left: 16px;
+
 }
 /* =========== /Page Footer styles =========== */
 
@@ -480,19 +518,26 @@ color: #404bbf;
 }
 .modal-close-btn {
   position: absolute;
+  width: 24px;
+  height: 24px;
   top: 24px;
   right: 24px;
-  background-color: transparent;
-  border: none;
-  padding: none;
-  line-height: 0;
-  stroke: #2e2f42;
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  stroke: #404bbf;
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
 }
 /* =========== /Modal window styles =========== */
 
@@ -613,13 +658,12 @@ color: #404bbf;
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   padding: 16px 32px;
   border: none;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .review-form-submit-btn:hover,
 .review-form-submit-btn:focus {

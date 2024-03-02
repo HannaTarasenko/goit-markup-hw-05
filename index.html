@@ -459,17 +459,20 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div class="form-container">
-        <form class="footer-form" name="subscription">
-          <label class="footer-form-label">
-            Subscribe
-            <input class="footer-form-input"
-            type="email"
-            name="subscribe"
-            placeholder="E-mail" />
+        <div class="footer-subscription-wrap">
+          <p class="footer-subscription-text">Subscribe</p>
+          <form class="subscription-form" name="subscription">
+            <label class="footer-form-label">
+              <input 
+                class="footer-form-input"
+                type="email"
+                name="email"
+                placeholder="E-mail" 
+              />
+            </label>
             <button class="footer-form-button"
-            type="submit">Subscribe
+            type="submit">
+            Subscribe
               <svg 
                 class="button-icon"
                 width="24"
@@ -478,11 +481,10 @@
                 <use href="/images/icons.svg#icon-plane"></use>
               </svg>
             </button>
-          </label>
-        </form>
+          </form>
       </div>
-      </div>
-    </footer>
+    </div>
+  </footer>
 
     <div class="backdrop is-open">
       <div class="modal">
@@ -514,7 +516,6 @@
                   <use href="./images/icons.svg#icon-avatar"></use>
                 </svg>
               </div>
-            </label>
           </div>
           <div class="review-form-field-wrapper">
             <label for="user-phone" class="review-form-field-label">
